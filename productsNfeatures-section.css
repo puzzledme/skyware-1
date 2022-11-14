@@ -1,0 +1,103 @@
+.productsNfeatures__section{
+    background-color: #FFF;
+    height: max-content;
+    width: auto;
+    padding: 0 0 2% 0;
+}
+
+.productsNfeatures__section_heading h2{
+    font-family: 'Copperplate Gothic Bold';
+    font-weight: 400;
+    line-height: 0.5vw;
+    color: #00AE8C;
+}
+
+.productsNfeatures__section_heading{
+    border-bottom: 2px solid #00AE8C;
+    width: max-content;
+    height: auto;
+    margin: 4% auto 2%;
+    padding: 0 1%;
+    align-items: center;
+}
+
+.productsNfeatures__section_content{
+    text-align: center;
+    color: #37384E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productsNfeatures__section_content_text{
+    margin: 0 16%;
+    text-align: center;
+}
+
+.productsNfeatures__section_content_img img{
+    width: auto;
+    height: 35vw;
+    margin: 0 auto;
+}
+
+.productsNfeatures__section_content_block{
+    display: flex;
+    flex-direction: column;
+}
+
+.productsNfeatures__section_content_block_sub{
+    background: rgb(0, 174, 140, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 20vw;
+    max-width: max-content;
+    height: 7vw;
+    border-radius: 5px;
+    margin: 0.5vw;
+    padding: 0 1vw;
+}
+
+.productsNfeatures__section_content_block_sub_title{
+    font-weight: 600;
+    font-style: italic;
+    padding-top: 1%;
+}
+
+.productsNfeatures__section_content_block_sub_text{
+    padding: 0 2%;
+    width: 35vw;
+}
+
+.productsNfeatures__section_content_block_group{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 504px){
+    .productsNfeatures__section_heading{
+        margin: 8% auto 5%;
+    }
+
+    .productsNfeatures__section_content_text{
+        margin: 0 5%;
+    }
+
+    .productsNfeatures__section_content_img img{
+        height: 50vw;
+    }
+
+    .productsNfeatures__section_content_block_sub{
+        height: 30vw;
+        margin: 3vw;
+        padding: 2vw;
+    }
+
+    .productsNfeatures__section_content_block_sub_title{
+        padding-top: 5%;
+    }
+}
