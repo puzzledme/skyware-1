@@ -1,0 +1,170 @@
+/* Poppins(font) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+a, li, span{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+#navSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 67px;
+    position: fixed;
+    z-index: 98;
+    background: #ffffff;
+    box-shadow: 0px 7px 20px rgba(0, 174, 140, 0.25);
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 1250px;
+    width: 100%;
+}
+
+.logo img{
+    height: 3rem;
+    width: 7rem;
+    margin: 10px 60px;
+}
+
+.login-button{
+    font-size: 16px;
+    background-color: #00AE8C;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    margin: 10px 40px;
+}
+
+.menu{
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgb(252, 252, 252);
+    height: 300px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 8rem;
+    width: 100%;
+    box-shadow: 0 20px 4px rgb(55, 56, 78, 0.25);
+    top: -9rem;
+}
+
+.menuItemsDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 33.3%;
+}
+
+.menu a{
+    color: #37384E;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.menu a:hover{
+    font-weight: bolder;
+    color: #00AE8C;
+}
+
+.hamburger{
+    position: fixed;
+    left: 45%;
+    background: transparent;
+    color: #00AE8C;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    z-index: 100;
+}
+
+.hamburger #ham-menu-text{
+    color: #37384E;
+    font-size: 20px;
+    padding-left: 10%;
+    margin: auto;
+}
+
+.hamburger .closeIcon{
+    display: none;
+}
+
+.showMenu{
+    transform: translateY(0);
+}
+
+@media (max-width: 760px) {
+
+    #navSection{
+        height: 70px;
+    }
+
+    .menu{
+        height: 4rem;
+        justify-content: center;
+        margin-top: 4rem;
+        width: auto;
+        padding-bottom: 2rem;
+        padding-top: 8rem; 
+        top: -7rem; 
+    }
+
+    .menuItemsDiv{
+        width: 100%;
+        height: 4rem;
+        padding: 0.8rem;
+    }
+
+    .menu a{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .hamburger{
+        left: 40%;
+    }
+
+    .nav img{
+        margin-left: 2rem;
+    }
+
+    .login-button{
+        font-size: 15px;
+        padding: 9px;
+        width: 80px;
+        margin: 10px 40px;
+    }
+}
