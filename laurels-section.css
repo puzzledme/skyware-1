@@ -1,0 +1,132 @@
+.laurels__section{
+    background-color: #FFF;
+    height: max-content;
+    width: auto;
+}
+
+.laurels__section_heading h2{
+    font-family: 'Copperplate Gothic Bold';
+    font-weight: 400;
+    line-height: 1vw;
+    color: #37384E;
+}
+
+.laurels__section_heading{
+    border-bottom: 0.1rem solid #37384E;
+    width: max-content;
+    height: auto;
+    margin: 4% auto 2%;
+    padding: 0 1%;
+    align-items: center;
+}
+
+.laurels__section_card_no img, .laurels__section_card_n1 img{
+    width: fit-content;
+    height: 4vw;
+    margin: 2vw 14vh 0;
+}
+
+.laurels__section_card_pos{
+    font-weight: 800;
+    font-size: 1.4vw;
+    text-align: center;
+}
+
+.laurels__section_card_title{
+    font-weight: 600;
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+.laurels__section_card_title_sub{
+    font-weight: 600;
+    font-size: 1.3vw;
+    text-align: center;
+    font-style: italic;
+}
+
+.laurels__section_card_no{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #37384E;
+    min-width: 20vw;
+    max-width: max-content;
+    height: inherit;
+    border: 1px solid #37384E;
+    box-shadow: 0px 7px 20px rgba(55, 56, 78, 0.25);
+    border-radius: 5px;
+    color:#FFF;
+    padding: 0 1vw 2vw 1vw;
+}
+
+.laurels__section_card_no_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+
+.laurels__section_card_n1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9D9D9;
+    min-width: 20vw;
+    max-width: max-content;
+    height: inherit;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 7px 20px rgba(217, 217, 217, 0.25);
+    border-radius: 5px;
+    color:#37384E;
+    padding: 0 1vw 2vw 1vw;
+}
+
+.laurels__section_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2% 15% 4%;
+}
+
+@media only screen and (max-width: 504px){
+    .laurels__section_heading{
+        margin: 5% auto 5%;
+    }
+
+    .laurels__section_card_pos{
+        font-weight: 600;
+        font-size: 2.5vw;
+        text-align: center;
+    }
+    
+    .laurels__section_card_title{
+        font-weight: 500;
+        font-size: 2.5vw;
+        text-align: center;
+    }
+
+    .laurels__section_card{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 2% 5% 5%;
+    }
+
+    .laurels__section_card_title_sub{
+        font-weight: 600;
+        font-size: 2.5vw;
+    }
+
+    .laurels__section_card_n1{
+        min-width: 20vw;
+    }
+
+    .laurels__section_card_no{
+        min-width: 20vw;
+    }
+
+}
