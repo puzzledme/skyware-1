@@ -1,0 +1,59 @@
+.aboutUs__section{
+    background-color: #00AE8C;
+    height: max-content;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.aboutUs__section_heading h2{
+    font-family: 'Copperplate Gothic Bold';
+    font-weight: 400;
+    line-height: 1vw;
+    color: #FFF;
+}
+
+.aboutUs__section_heading{
+    border-bottom: 0.1rem solid #FFF;
+    width: max-content;
+    height: auto;
+    margin: 4% auto 2%;
+    padding: 0 1%;
+    align-items: center;
+}
+
+.aboutUs__section_content{
+    text-align: center;
+    color: #FFF;
+}
+
+.aboutUs__section_content_text{
+    margin: 0.5rem 16%;
+    text-align: center;
+}
+
+.aboutUs__section_content_text span{
+    font-family: 'Aquire';
+}
+
+.aboutUs__section_content_img img{
+    width: 70vw;
+    height: auto;
+    margin: 2% 10%;
+}
+
+@media only screen and (max-width: 504px){    
+    .aboutUs__section_heading{
+        margin: 5% auto 5%;
+    }
+    
+    .aboutUs__section_content_text{
+        margin: 2% 5% 4%;
+    }
+    
+    .aboutUs__section_content_img img{
+        width: 85vw;
+        margin: 2% 5% 5%;
+    }
+}
