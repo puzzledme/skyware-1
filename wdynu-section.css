@@ -1,0 +1,120 @@
+.wdynu__section{
+    background-color: #37384E;
+    height: max-content;
+    width: auto;
+    padding: 0 0 2% 0;
+}
+
+.wdynu__section_heading h2{
+    font-family: 'Copperplate Gothic Bold';
+    font-weight: 400;
+    line-height: 0.5vw;
+    color: #FFF;
+}
+
+.wdynu__section_heading{
+    border-bottom: 2px solid #FFF;
+    width: max-content;
+    height: auto;
+    margin: 4% auto 2%;
+    padding: 0 1%;
+    align-items: center;
+}
+
+.wdynu__section_warehouse{
+    background: url('./images/Warehouse.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 2% 10% 0;
+    height: 12vw;    
+}
+
+.wdynu__section_warehouse div{
+    width: 45%;
+    height: auto;
+    margin: 0 14vw;
+    padding: 3.7vw 0 0;
+}
+
+.wdynu__section_pest{
+    background: url('./images/Pest.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    margin: 0 10%;
+    height: 12vw;    
+}
+
+.wdynu__section_pest div{
+    width: 45%;
+    height: auto;
+    margin: 0 14vw 0 30vw;
+    padding: 3.7vw 0 0;
+}
+
+.wdynu__section_waste{
+    background: url('./images/waste.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 10%;
+    height: 12vw;    
+}
+
+.wdynu__section_waste div{
+    width: 45%;
+    height: auto;
+    margin: 0 14vw;
+    padding: 5vw 0 0;
+}
+
+@media only screen and (max-width: 504px){
+    .wdynu__section{
+        padding: 5% 0 5% 0;
+    }
+    
+    .wdynu__section_warehouse{
+        background: url('./images/Warehouse-mob.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 2% 5% 0;
+        height: 34vw;
+        width: 70vw;           
+    }
+    
+    .wdynu__section_warehouse div{
+        width: 60%;
+        margin: 0 0 0 23vw;
+        padding: 7vw 0 0;
+    }
+    
+    .wdynu__section_pest{
+        background: url('./images/Pest-mob.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        margin: 2% 5% 0 25%;
+        height: 34vw;
+        width: 70vw;           
+    }
+    
+    .wdynu__section_pest div{
+        width: 60%;
+        margin: 0 0 0 7vw;
+        padding: 8vw 0 0;
+    }
+
+    .wdynu__section_waste{
+        background: url('./images/waste-mob.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 2% 5% 0;
+        height: 34vw;
+        width: 70vw;           
+    }
+    
+    .wdynu__section_waste div{
+        width: 60%;
+        margin: 0 0 0 23vw;
+        padding: 8vw 0 0;
+    }
+}
