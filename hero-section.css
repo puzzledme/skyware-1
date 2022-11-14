@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "Aquire";
+    src: url("Aquire.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Copperplate Gothic Bold";
+    src: url("CopperplateGothicBold.ttf");
+}
+
+@font-face {
+    font-family: "Copperplate Gothic Light";
+    src: url("COPRGTL.TTF");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05vw;
+    line-height: 2vw;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    overflow-x: hidden;
+}
+
+.hero__section{
+    display: block;
+    padding: 0 0 3rem;
+    background: url("./images/Vision-screen.png");
+    background-color: white;
+    height: max-content;
+    width: auto;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.hero__section_logo{
+    width: 35%;
+    height: auto;
+    margin: 5rem 10% 0 10%;
+    z-index: 100;
+}
+
+.hero__section_tagline div{
+    font-family: 'Copperplate Gothic Bold';
+    font-size: 1.75vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2vw;
+    margin: 2% 10% 2% 15%;
+    padding: 1.25vw;
+    z-index: 100;
+}
+
+.hero__section_tagline{
+    color: white;
+    background-color: #00AE8C;
+    border-radius: 0 5rem 5rem 0;
+    width: 60%;
+    height: max-content;
+    z-index: 100;
+}
+
+.hero__section lottie-player{
+    position: absolute;
+    top: 10vw;
+    left: 53vw;
+    width: 35vw;
+    height: auto;
+    animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.hero__section_content{
+    color: #37384E;
+    width: 45%;
+    margin: 3% 10% 5% 10%;
+}
+
+@media only screen and (max-width: 504px){
+
+    body{
+        font-size: 2.9vw;
+        line-height: 4vw;
+        font-weight: 300;
+    }
+
+    .hero__section{
+        background: url("./images/Vision-screen-mob.png");
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    .hero__section script{
+        display: none;
+    }
+
+    .hero__section lottie-player{
+        display: none;
+    }
+
+    .hero__section_logo{
+        margin: 50vw 8% 0 8%;
+    }
+    
+    .hero__section_tagline div{
+        font-size: 2.5vw;
+        line-height: 3vw;
+        font-weight: 400;
+        margin: 2% 0 2% 8%;
+        padding: 1.25vw;
+    }
+
+    .hero__section_tagline{
+        width: 70%;
+    }
+
+    .hero__section_content{
+        text-align: center;
+        width: 50%;
+        margin: 3% 8% 2% 8%;
+    }
+}
+
+@media only screen and (max-width: 685px){
+    .hero__section lottie-player{
+        display: none;
+    }
+}
